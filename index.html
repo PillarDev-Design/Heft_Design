@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>Heft</title>
+    <!-- JavaScript Imports -->
+    <script type='text/javascript' src='/static/js/heft_util.js'></script>
+    <!-- CSS Imports -->
+    <link href='/static/css/heft_style.css' rel='stylesheet' type='text/css' />
+</head>
+<body onload='placeholder()'>
+<div id='site_container'>
+    <div id='top_buffer'></div>		
+    <div id='header_container'>
+        <div id='header_title'>COP3014 Notes</div>
+        <hr class ='dark_blue_line' />
+        <div id='header_subtitle'>C.Nabors - Summer 2014</div>
+    </div> <!-- header_container -->
+    <div id='intro_section'>
+        <div id='new_entry_button'>New Entry</div>
+	<div id='recent_entries_container'>
+	    <!-- The entries will be automated by Flask -->
+	    <table id='recent_entries_table'>
+		<tr>
+		    <th id='recent_entries_date' class='recent_entries_top_row'>
+			DATE
+		    </th>
+		    <th id='recent_entries_week' class='recent_entries_top_row'>
+			WEEK
+		    </th>
+		    <th id='recent_entries_description' class='recent_entries_top_row'>
+			DESCRIPTION
+		    </th>
+	        </tr> <!-- END top title row -->
+                <!-- NOTE:
+		     These rows will be autopopulated, as well as the classes
+		     will be automatically attributed.                    -->
+		<tr id='recent_entries_row_one' class='recent_entries_row'>
+		    <td>16MAY2014</td>
+		    <td class='recent_entries_week_column'>1</td>
+		    <td>This is a description of the note of 16 May 2014.</td>
+	        </tr> <!-- END first row -->
+		<tr id='recent_entries_row_two' class='recent_entries_row'>
+		    <td class='recent_entries_shade'>14MAY2014</td>
+		    <td class='recent_entries_week_column recent_entries_shade'>1</td>
+		    <td class='recent_entries_shade'>
+		        This is a description of the note of 14 May 2014. This is a description of the note of 14 May 2014. This is a description of the note of 14 May 2014. This is a description of the note of 14 May 2014.</td>
+		</tr> <!-- END second row -->
+		<tr id='recent_entries_row_three' class='recent_entries_row'>
+		    <td>12MAY2014</td>
+		    <td class='recent_entries_week_column'>1</td>
+		    <td>This is a description of the note of 12 May 2014.
+		</tr> <!-- END third row -->
+	    </table> 
+        </div> <!-- recent_entries_container -->
+        <div class='clear'></div>
+    </div> <!-- intro_section -->
+    <div id='browse_section'>
+	<div id='index_and_topics_container'>
+            <div id='index_and_topics_tab_container'>
+	        <div id='index_tab' class='index_and_topics_tab index_and_topics_tab_active'>Entry Index</div>
+		<div id='topics_tab' class='index_and_topics_tab index_and_topics_tab_inactive'>Topics</div>
+		<div class='clear'></div>
+	    </div> <!-- index_and_topics_tab_container -->
+            <div id='index_container' class='index_and_topics_box div_active'>
+                Index placeholder
+            </div> <!-- index_container -->
+            <div id='topics_container' class='index_and_topics_box div_inactive'>
+                Topics placeholder
+            </div> <!-- topics_container -->
+        </div> <!-- index_and_topics_container -->
+    </div> <!-- browse_section -->
+    <div id='footer_container'>
+        Placeholder for the footer
+    </div> <!-- footer_container -->
+</div> <!-- site_container -->
+</body>
+</html>
